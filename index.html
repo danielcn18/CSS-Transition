@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain Marvel Animation</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #container{
+            height: 400px;
+            width: 600px;
+            display: flex;
+            position: relative;
+            margin: 30vh 35vw 30vh 35vw;
+            background-image: linear-gradient(to top right, lightcoral, darkviolet, rebeccapurple);
+            border-radius: 15px;
+        }
+        #myImage{
+            height: 46vh;
+            width: auto;
+            position: absolute;
+            right: 8.5vw;
+            bottom: 0;
+            transition: 3s;
+        }
+        #myText{
+            height: 30vh;
+            width: 10vw;
+            position: absolute;
+            margin: 7vh 0 5vw 8vw;
+            background-color: transparent;
+            visibility: hidden;
+            font-size: 19px;
+            transition: 3s;
+            opacity: 0%;
+        }
+        #container:hover #myImage{
+            height: 60vh;
+            right: -7vw;
+        }
+        #container:hover #myText{
+            visibility: visible;
+            margin: 6vh 0 0vw 3vw;
+            opacity: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <img src="/Images/image1.1.png" alt="hello" id="myImage">
+        
+        <div id="myText"><i><b>Captain Marvel</b></i><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia repellat sint ad eaque nesciunt aliquam qui, rem delectus iusto cumque assumenda. Voluptatum veritatis voluptas nemo nihil amet nisi maxime! Unde.</div>
+    </div>
+</body>
+</html>
